@@ -8,5 +8,31 @@
 </p>
 
 ## deployment guide
+
+Note:you need to install docker on the machine first
+
+## First time commands
 clone the project from GitHub
-git clone 
+
+<code> git clone https://github.com/ahmedeltokhy/foodlableTest.git</code>
+
+then install the project using composer 
+
+<code>composer install</code>
+
+add the environment file (.env) attached to the email
+
+run the docker build command (using laravel sail)
+
+<code>vendor/bin/sail up -d</code>
+
+run the migration command under the sail
+
+<code>vendor/bin/sail artisan migrate --seed</code>
+
+## Next times running command
+
+run the sail up command
+
+<code>vendor/bin/sail up -d</code>
+
